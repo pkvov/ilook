@@ -1,0 +1,60 @@
+-# coding: utf-8
+选择条件:
+%p 
+  地区
+  %ul{:class => "inline nav"}
+    %li{:class => ("active" if @filter[:current_area_id].nil?)}
+      %a{:href => "/vegetable/price?area_id=&market_id=#{@filter[:current_market_id]}&category_id=#{@filter[:current_category_id]}&date=#{@filter[:current_date]}"}
+        不限
+    -@filter[:areas].each do |a|
+      %li{:class => ("active" if @filter[:current_area_id] == a.id)}
+        %a{:href => "/vegetable/price?area_id=#{a.id}&market_id=#{@filter[:current_market_id]}&category_id=#{@filter[:current_category_id]}&date=#{@filter[:current_date]}"}
+          = a[:name]
+%p
+  市场
+  %ul{:class => "inline nav"}
+    %li{:class => ("active" if @filter[:current_area_id].nil?)}
+      %a{:href => "/vegetable/price?area_id=#{@filter[:current_area_id]}&market_id=&category_id=#{@filter[:current_category_id]}&date=#{@filter[:current_date]}"}
+        不限
+    -if @filter[:markets] then
+      -@filter[:markets].each do |m|
+        %li{:class => ('active' if @filter[:current_market_id] == m.id)}
+          %a{:href => "/vegetable/price?area_id=#{@filter[:current_area_id]}&market_id=#{m.id}&category_id=#{@filter[:current_category_id]}&date=#{@filter[:current_date]}"}
+            = m[:name]
+%p
+  品种
+  %ul{:class => "inline nav"}
+    %li{:class => ("active" if @filter[:current_area_id].nil?)}
+      %a{:href => "/vegetable/price?area_id=#{@filter[:current_area_id]}&market_id=#{@filter[:current_market_id]}&category_id=&date=#{@filter[:current_date]}"}
+        不限
+    -@filter[:categories].each  do |c|
+      %li{:class =>  ('active' if @filter[:current_category_id] == c.id)}
+        %a{:href => "/vegetable/price?area_id=#{@filter[:current_area_id]}&market_id=#{@filter[:current_market_id]}&category_id=#{c.id}&date=#{@filter[:current_date]}"}
+          = c[:name]
+%p
+  日期
+  #dp3.input-append.date{"data-date" => "2013-05-22", "data-date-format" => "yyyy-mm-dd"}
+    %input.span2{:readonly => "", :size => "16", :type => "text", :value => "2012-05-22"}
+      %span.add-on
+        %i.icon-remov
+      %span.add-on
+        %i.icon-calendar
+
+:javascript
+  $('.datepicker').datepicker()
+  $(document).ready(function(ev){
+    $(function() {
+      $("#datepicker").datepicker($.datepicker.regional['zh-CN']); 
+      $("#date-pick").datepicker({
+          onSelect: function (dateText, inst) {
+            date_url = "#{escape_javascript get_date_changed_url()}" + this.value;
+            window.location = date_url;
+          }                  
+      });
+    });
+
+  });
+%p
+  = partial('/vegetable/show')
+= javascript_include_tag 'bootstrap-datetimepicker'
+

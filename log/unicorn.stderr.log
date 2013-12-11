@@ -1,0 +1,24 @@
+I, [2013-11-30T13:21:14.545271 #17647]  INFO -- : listening on addr=0.0.0.0:3001 fd=10
+I, [2013-11-30T13:21:14.545673 #17647]  INFO -- : unlinking existing socket=/home/kepeng/website/ilook/tmp/sockets/unicorn.sock
+I, [2013-11-30T13:21:14.545806 #17647]  INFO -- : listening on addr=/home/kepeng/website/ilook/tmp/sockets/unicorn.sock fd=11
+I, [2013-11-30T13:21:14.545925 #17647]  INFO -- : worker=0 spawning...
+I, [2013-11-30T13:21:14.546796 #17647]  INFO -- : worker=1 spawning...
+I, [2013-11-30T13:21:14.547324 #17650]  INFO -- : worker=0 spawned pid=17650
+I, [2013-11-30T13:21:14.547472 #17650]  INFO -- : Refreshing Gem list
+I, [2013-11-30T13:21:14.547616 #17647]  INFO -- : master process ready
+I, [2013-11-30T13:21:14.552561 #17653]  INFO -- : worker=1 spawned pid=17653
+I, [2013-11-30T13:21:14.552803 #17653]  INFO -- : Refreshing Gem list
+I, [2013-11-30T13:21:17.834020 #17653]  INFO -- : worker=1 ready
+I, [2013-11-30T13:21:17.944830 #17650]  INFO -- : worker=0 ready
+I, [2013-12-08T17:41:46.442602 #2167]  INFO -- : listening on addr=0.0.0.0:3001 fd=10
+I, [2013-12-08T17:41:46.447187 #2167]  INFO -- : unlinking existing socket=/home/kepeng/website/ilook/tmp/sockets/unicorn.sock
+I, [2013-12-08T17:41:46.447317 #2167]  INFO -- : listening on addr=/home/kepeng/website/ilook/tmp/sockets/unicorn.sock fd=11
+I, [2013-12-08T17:41:46.447416 #2167]  INFO -- : worker=0 spawning...
+I, [2013-12-08T17:41:46.447937 #2167]  INFO -- : worker=1 spawning...
+I, [2013-12-08T17:41:46.448382 #2170]  INFO -- : worker=0 spawned pid=2170
+I, [2013-12-08T17:41:46.448465 #2167]  INFO -- : master process ready
+I, [2013-12-08T17:41:46.448522 #2170]  INFO -- : Refreshing Gem list
+I, [2013-12-08T17:41:46.448911 #2173]  INFO -- : worker=1 spawned pid=2173
+I, [2013-12-08T17:41:46.449049 #2173]  INFO -- : Refreshing Gem list
+I, [2013-12-08T17:41:50.806334 #2170]  INFO -- : worker=0 ready
+I, [2013-12-08T17:41:50.808598 #2173]  INFO -- : worker=1 ready

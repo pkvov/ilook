@@ -1,0 +1,5 @@
+class Goods < ActiveRecord::Base
+  belongs_too :category
+  belongs_to :market
+  belongs_to :unit
+end

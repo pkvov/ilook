@@ -1,0 +1,36 @@
+-# coding: utf-8
+%table{:class => "table table-hover"}
+  %thead
+    %tr
+      %th图片
+      %th名称
+      %th市场
+      %th类别
+      %th最高价
+      %th最低价
+      %th单位
+      %th日期
+      %th最近走势
+  %tbody
+    - if @items
+      - @items.each do |item|
+        %tr
+          %td
+            %img{:src => "/images/logo/#{item[:name]}.jpg"}
+          %td 
+            = item.name
+          %td 
+            = item.market.name if item.market_id
+          %td 
+            = item.category.name if item.category_id
+          %td 
+            = item.high
+          %td 
+            = item.low
+          %td 
+            = item.unit.name if item.unit_id
+          %td 
+            = item.date.strftime("%Y-%m-%d")
+          %td
+            %img{:src => "/images/trend/#{item.market_id}.#{item[:name]}.png", :height => 150, :width => 200}
+=find_and_preserve(will_paginate(@items, :render => "/vegetable/show"))

@@ -1,0 +1,1000 @@
+ :market_name=>"山东省青岛市平度市",
+ :name=>insert good #<Goods:0xb19c2438>
+"16.00 "#<Goods id: nil, name: "14.40 ", category_id: 7, market_id: 462, date: "2013-11-15", high: #<BigDecimal:b19cc58c,'0.0',9(9)>, low: #<BigDecimal:b19cc514,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+,
+ :price=>"外三元",
+ :unit_name=>"元/公斤"}
+save_one_day market_id:463 date:2013-11-15
+[#<Goods id: nil, name: "15.20 ", category_id: 7, market_id: 463, date: "2013-11-15", high: #<BigDecimal:b192ead0,'0.0',9(9)>, low: #<BigDecimal:b192ea94,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.30 ", category_id: 7, market_id: 463, date: "2013-11-15", high: #<BigDecimal:b19ba65c,'0.0',9(9)>, low: #<BigDecimal:b19ba620,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>]
+insert good #<Goods:0xb19d8134>
+#<Goods id: nil, name: "16.00 ", category_id: 7, market_id: 462, date: "2013-11-15", high: #<BigDecimal:b6977190,'0.0',9(9)>, low: #<BigDecimal:b6977140,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省青岛市 平度市 11月15日 生猪价格 14.90  内三元
+{:category_name=>"生猪",
+ :market_name=>"山东省青岛市平度市",
+ :name=>"14.90 ",
+ :price=>"内三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xb1e6227c>
+#<Goods id: nil, name: "14.90 ", category_id: 7, market_id: 462, date: "2013-11-15", high: #<BigDecimal:b1e5f824,'0.0',9(9)>, low: #<BigDecimal:b1e5f7c0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省青岛市 平度市 11月15日 生猪价格 15.50  外三元
+{:category_name=>"生猪",
+ :market_name=>"山东省青岛市平度市",
+ :name=>"15.50 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xb644d0d4>
+#<Goods id: nil, name: "15.50 ", category_id: 7, market_id: 462, date: "2013-11-15", high: #<BigDecimal:b644b11c,'0.0',9(9)>, low: #<BigDecimal:b644b0e0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省青岛市 平度市 11月15日 生猪价格 14.40  土杂猪
+{:category_name=>"生猪",
+ :market_name=>"山东省青岛市平度市",
+ :name=>"14.40 ",
+ :price=>"土杂猪",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xb18ec7e8>
+#<Goods id: nil, name: "14.40 ", category_id: 7, market_id: 462, date: "2013-11-15", high: #<BigDecimal:b18ea8d0,'0.0',9(9)>, low: #<BigDecimal:b18ea894,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+get_one_page ...
+process_sub_page ...
+山东省日照市 莒  县 11月15日 生猪价格 14.60  内三元
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"14.60 ",
+ :price=>"内三元",
+ :unit_name=>"元/公斤"}
+save_one_day market_id:462 date:2013-11-15
+[#<Goods id: nil, name: "16.00 ", category_id: 7, market_id: 462, date: "2013-11-15", high: #<BigDecimal:b17bf870,'0.0',9(9)>, low: #<BigDecimal:b17bf834,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.90 ", category_id: 7, market_id: 462, date: "2013-11-15", high: #<BigDecimal:b193a808,'0.0',9(9)>, low: #<BigDecimal:b193a7cc,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "15.50 ", category_id: 7, market_id: 462, date: "2013-11-15", high: #<BigDecimal:b19a2980,'0.0',9(9)>, low: #<BigDecimal:b19a2944,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.40 ", category_id: 7, market_id: 462, date: "2013-11-15", high: #<BigDecimal:b19cc58c,'0.0',9(9)>, low: #<BigDecimal:b19cc514,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>]
+insert good #<Goods:0xb18247e8>
+#<Goods id: nil, name: "14.60 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b1822ed4,'0.0',9(9)>, low: #<BigDecimal:b1822e98,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 16.00  外三元
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"16.00 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xb18682cc>
+#<Goods id: nil, name: "16.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b187a65c,'0.0',9(9)>, low: #<BigDecimal:b187a620,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 13.90  土杂猪
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"13.90 ",
+ :price=>"土杂猪",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xb1017b40>
+#<Goods id: nil, name: "13.90 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b10162a4,'0.0',9(9)>, low: #<BigDecimal:b1016268,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 14.00  内三元
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"14.00 ",
+ :price=>"内三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xb699666c>
+#<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b6994dbc,'0.0',9(9)>, low: #<BigDecimal:b6994d80,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 15.00  外三元
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"15.00 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xb1dbe2d0>
+#<Goods id: nil, name: "15.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b1952b9c,'0.0',9(9)>, low: #<BigDecimal:b1952b60,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 13.50  内三元
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"13.50 ",
+ :price=>"内三元",
+ :unit_name=>"元/公斤"process_sub_page ...
+山东省日照市 莒  县 11月15日 生猪价格 14.60  内三元
+{:category_name=>"生猪",
+ }:market_name
+=>"莒县11月15日",
+ :name=>"14.60 ",
+ :price=>"内三元",insert good #<Goods:0xb18613f0>
+
+ #<Goods id: nil, name: "13.50 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b17fa808,'0.0',9(9)>, low: #<BigDecimal:b17fa7cc,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>:unit_name
+=>山东省日照市 莒  县 11月15日 生猪价格 14.00  外三元"元/公斤"
+}{
+:category_name=>"生猪",
+ :market_namesave_one_day market_id:462 date:2013-11-15
+[#<Goods id: nil, name: "16.00 ", category_id: 7, market_id: 462, date: "2013-11-15", high: #<BigDecimal:b6977190,'0.0',9(9)>, low: #<BigDecimal:b6977140,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.90 ", category_id: 7, market_id: 462, date: "2013-11-15", high: #<BigDecimal:b1e5f824,'0.0',9(9)>, low: #<BigDecimal:b1e5f7c0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,=>"莒县11月15日"
+ ,#<Goods id: nil, name: "15.50 ", category_id: 7, market_id: 462, date: "2013-11-15", high: #<BigDecimal:b644b11c,'0.0',9(9)>, low: #<BigDecimal:b644b0e0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+
+  #<Goods id: nil, name: "14.40 ", category_id: 7, market_id: 462, date: "2013-11-15", high: #<BigDecimal:b18ea8d0,'0.0',9(9)>, low: #<BigDecimal:b18ea894,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>:name]=>
+"14.00 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xb1a93434>
+#<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b1a90dec,'0.0',9(9)>, low: #<BigDecimal:b1a90db0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 13.00  土杂猪
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>insert good #<Goods:0xb187d528>
+"13.00 "#<Goods id: nil, name: "14.60 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b187bc00,'0.0',9(9)>, low: #<BigDecimal:b187bbc4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+,山东省日照市 莒  县 11月15日 生猪价格 16.00  外三元
+
+ {:category_name:price=>=>"生猪","土杂猪",
+
+  :market_name:unit_name=>=>"莒县11月15日""元/公斤",}
+
+ :name=>"16.00 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"}insert good #<Goods:0xb1a4dd58>
+
+#<Goods id: nil, name: "13.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b1a4c3cc,'0.0',9(9)>, low: #<BigDecimal:b1a4c390,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 14.00  内三元
+{:category_name=>"生猪",
+ :market_nameinsert good #<Goods:0xb18857c8>
+=>#<Goods id: nil, name: "16.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b188ba60,'0.0',9(9)>, low: #<BigDecimal:b188ba24,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>"莒县11月15日"
+,山东省日照市 莒  县 11月15日 生猪价格 13.90  土杂猪
+{:category_name
+=> "生猪",
+:name =>:market_name"14.00 "=>,"莒县11月15日"
+, 
+:price =>:name"内三元"=>,"13.90 "
+ ,:unit_name
+=> "元/公斤":price}=>
+"土杂猪",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xb1a5dbcc>
+#<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b1a63798,'0.0',9(9)>, low: #<BigDecimal:b1a6375c,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 14.00  外三元
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"14.00 ",
+ :priceinsert good #<Goods:0xb1a620c8>
+=>#<Goods id: nil, name: "13.90 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b1a0ee14,'0.0',9(9)>, low: #<BigDecimal:b1a0edb0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 14.00  内三元
+{:category_name=>"外三元""生猪",
+, 
+:market_name =>:unit_name"莒县11月15日"=>,"元/公斤"
+} 
+:name=>"14.00 ",
+ :price=>"内三元",
+insert good #<Goods:0xb1a123c0>
+ #<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b18a6590,'0.0',9(9)>, low: #<BigDecimal:b18a6554,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>:unit_name
+=>山东省日照市 莒  县 11月15日 生猪价格 13.50  土杂猪"元/公斤"
+{}:category_name
+=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"13.50 ",insert good #<Goods:0xb03678b4>
+#<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b06b62e0,'0.0',9(9)>, low: #<BigDecimal:b06b6290,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+
+山东省日照市 莒  县 11月15日 生猪价格 15.00  外三元
+{:category_name=> "生猪",
+:price=> "土杂猪":market_name,=>
+"莒县11月15日" ,:unit_name
+=> "元/公斤":name}=>
+"15.00 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"insert good #<Goods:0xb045e678>}
+
+#<Goods id: nil, name: "13.50 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b02e1804,'0.0',9(9)>, low: #<BigDecimal:b02e17c8,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 13.50  内三元
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+insert good #<Goods:0xb07ee950>
+#<Goods id: nil, name: "15.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b07fd9f0,'0.0',9(9)>, low: #<BigDecimal:b07fd9a0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+ 山东省日照市 莒  县 11月15日 生猪价格 13.50  内三元
+{:category_name:name=>=>"生猪","13.50 "
+, 
+:market_name =>:price"莒县11月15日"=>,"内三元"
+ ,:name=>
+"13.50 " ,:unit_name
+=> "元/公斤":price=>}"内三元"
+,
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xb00a8e48>
+#<Goods id: nil, name: "13.50 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b00b72f4,'0.0',9(9)>, low: #<BigDecimal:b00b72a4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 14.00  外三元
+insert good #<Goods:0xb00c6d30>
+#<Goods id: nil, name: "13.50 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b00c42d8,'0.0',9(9)>, low: #<BigDecimal:b00c4274,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+{:category_name=>"生猪",
+ 山东省日照市 莒  县 11月15日 生猪价格 14.00  外三元
+:market_name=>{:category_name=>"莒县11月15日",
+ :name=>"生猪",
+"14.00 " ,:market_name
+=> "莒县11月15日":price,
+=> "外三元":name,=>
+"14.00 " ,:unit_name
+=> "元/公斤":price}=>
+"外三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xb00e3214>
+#<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b00e1928,'0.0',9(9)>, low: #<BigDecimal:b00e18ec,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 13.00  土杂猪
+{:category_name=>"生猪",insert good #<Goods:0xb02d9104>
+
+ #<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:afd20e60,'0.0',9(9)>, low: #<BigDecimal:afd20e24,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>:market_name
+=>山东省日照市 莒  县 11月15日 生猪价格 13.00  土杂猪"莒县11月15日"
+,{
+:category_name =>:name"生猪",=>
+"13.00 " :market_name,=>
+"莒县11月15日" :price,=>
+"土杂猪" ,:name
+=> "13.00 ":unit_name=>,"元/公斤"
+} 
+:price=>"土杂猪",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xafb392b4>
+#<Goods id: nil, name: "13.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:afb48a5c,'0.0',9(9)>, low: #<BigDecimal:afb48a0c,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+insert good #<Goods:0xafb54550>
+#<Goods id: nil, name: "13.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:afb6259c,'0.0',9(9)>, low: #<BigDecimal:afb62560,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 14.00  内三元
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"14.00 ",
+ :price=>"内三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xafb7c834>
+#<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:afb7a6ec,'0.0',9(9)>, low: #<BigDecimal:afb7a688,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 14.00  外三元
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"14.00 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xafb96a40>
+#<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:afb9cb70,'0.0',9(9)>, low: #<BigDecimal:afb9cb20,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 13.50  土杂猪
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"13.50 ",
+ :price=>"土杂猪",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xafba3024>
+#<Goods id: nil, name: "13.50 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:afbae424,'0.0',9(9)>, low: #<BigDecimal:afbae3e8,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 13.50  内三元
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"13.50 ",
+ :price=>"内三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xafbbabe8>
+#<Goods id: nil, name: "13.50 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:afbb92ac,'0.0',9(9)>, low: #<BigDecimal:afbb9270,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 14.00  外三元
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"14.00 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xafbd7dc4>
+#<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:afbd62a8,'0.0',9(9)>, low: #<BigDecimal:afbd626c,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 13.00  土杂猪
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"13.00 ",
+ :price=>"土杂猪",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xafbdf77c>
+#<Goods id: nil, name: "13.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:afbe9e5c,'0.0',9(9)>, low: #<BigDecimal:afbe9e20,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+date 2013-11-14
+date 2013-11-14
+date 2013-11-13
+date 2013-11-12
+date 2013-11-11
+date 2013-11-11
+date 2013-11-11
+date 2013-11-08
+date 2013-11-06
+date 2013-11-05
+date 2013-11-05
+date 2013-11-04
+date 2013-11-04
+date 2013-10-31
+date 2013-10-30
+date 2013-10-29
+date 2013-10-29
+date 2013-10-28
+date 2013-10-28
+date 2013-10-25
+date 2013-10-25
+date 2013-10-24
+date 2013-10-23
+date 2013-10-23
+date 2013-10-22
+date 2013-10-22
+date 2013-10-22
+date 2013-10-21
+date 2013-10-21
+date 2013-10-20
+date 2013-10-18
+date 2013-10-17
+date 2013-10-16
+date 2013-10-14
+date 2013-10-14
+date 2013-10-13
+date 2013-10-10
+date 2013-10-09
+date 2013-10-07
+date 2013-10-06
+date 2013-10-04
+date 2013-09-30
+date 2013-09-27
+get_one_page ...
+process_sub_page ...
+山东省日照市 莒  县 11月15日 生猪价格 14.00  内三元
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"14.00 ",
+ :price=>"内三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xaf91a0b4>
+#<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:af918818,'0.0',9(9)>, low: #<BigDecimal:af9187dc,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 14.50  外三元
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"14.50 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xaf9376c8>
+#<Goods id: nil, name: "14.50 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:af935e90,'0.0',9(9)>, low: #<BigDecimal:af935e54,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 13.80  土杂猪
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"13.80 ",
+ :price=>"土杂猪",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xaf945598>
+#<Goods id: nil, name: "13.80 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:af943e64,'0.0',9(9)>, low: #<BigDecimal:af943e28,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省泰安市 岱岳区 11月15日 生猪价格 15.60  内三元
+{:category_name=>"生猪",
+ :market_name=>"山东省泰安市岱岳区",
+ :name=>"15.60 ",
+ :price=>"内三元",
+ :unit_name=>"元/公斤"}
+save_one_day market_id:840 date:2013-11-15
+[#<Goods id: nil, name: "14.60 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b1822ed4,'0.0',9(9)>, low: #<BigDecimal:b1822e98,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "16.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b187a65c,'0.0',9(9)>, low: #<BigDecimal:b187a620,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "13.90 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b10162a4,'0.0',9(9)>, low: #<BigDecimal:b1016268,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b6994dbc,'0.0',9(9)>, low: #<BigDecimal:b6994d80,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "15.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b1952b9c,'0.0',9(9)>, low: #<BigDecimal:b1952b60,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "13.50 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b17fa808,'0.0',9(9)>, low: #<BigDecimal:b17fa7cc,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b1a90dec,'0.0',9(9)>, low: #<BigDecimal:b1a90db0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "13.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b1a4c3cc,'0.0',9(9)>, low: #<BigDecimal:b1a4c390,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b1a63798,'0.0',9(9)>, low: #<BigDecimal:b1a6375c,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b18a6590,'0.0',9(9)>, low: #<BigDecimal:b18a6554,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "13.50 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b02e1804,'0.0',9(9)>, low: #<BigDecimal:b02e17c8,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "13.50 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b00b72f4,'0.0',9(9)>, low: #<BigDecimal:b00b72a4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b00e1928,'0.0',9(9)>, low: #<BigDecimal:b00e18ec,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "13.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:afb48a5c,'0.0',9(9)>, low: #<BigDecimal:afb48a0c,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:af918818,'0.0',9(9)>, low: #<BigDecimal:af9187dc,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.50 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:af935e90,'0.0',9(9)>, low: #<BigDecimal:af935e54,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "13.80 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:af943e64,'0.0',9(9)>, low: #<BigDecimal:af943e28,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>]
+process_sub_page ...
+山东省日照市 莒  县 11月15日 生猪价格 14.00  内三元
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"14.00 ",
+ :price=>"内三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xace7f05c>
+#<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:ace8aefc,'0.0',9(9)>, low: #<BigDecimal:ace8aec0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 14.50  外三元
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"14.50 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xacea9294>
+#<Goods id: nil, name: "14.50 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:aceb7b00,'0.0',9(9)>, low: #<BigDecimal:aceb7a9c,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省日照市 莒  县 11月15日 生猪价格 13.80  土杂猪
+{:category_name=>"生猪",
+ :market_name=>"莒县11月15日",
+ :name=>"13.80 ",
+ :price=>"土杂猪",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xb2aea83c>
+#<Goods id: nil, name: "13.80 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:ac9eac80,'0.0',9(9)>, low: #<BigDecimal:ac9eac30,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省泰安市 岱岳区 11月15日 生猪价格 15.60  内三元
+{:category_name=>"生猪",
+ :market_name=>"山东省泰安市岱岳区",
+ :name=>"15.60 ",
+ :price=>"内三元",
+ :unit_name=>"元/公斤"}
+save_one_day market_id:840 date:2013-11-15
+[#<Goods id: nil, name: "14.60 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b187bc00,'0.0',9(9)>, low: #<BigDecimal:b187bbc4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "16.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b188ba60,'0.0',9(9)>, low: #<BigDecimal:b188ba24,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "13.90 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b1a0ee14,'0.0',9(9)>, low: #<BigDecimal:b1a0edb0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+insert good #<Goods:0xaf957bbc> 
+#<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b06b62e0,'0.0',9(9)>, low: #<BigDecimal:b06b6290,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+#<Goods id: nil, name: "15.60 ", category_id: 7, market_id: 465, date: "2013-11-15", high: #<BigDecimal:af956578,'0.0',9(9)>, low: #<BigDecimal:af95653c,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省泰安市 岱岳区 11月15日 生猪价格 15.60  内三元
+{:category_name =>#<Goods id: nil, name: "15.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b07fd9f0,'0.0',9(9)>, low: #<BigDecimal:b07fd9a0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+"生猪",
+  #<Goods id: nil, name: "13.50 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:b00c42d8,'0.0',9(9)>, low: #<BigDecimal:b00c4274,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,:market_name
+=> "山东省泰安市岱岳区"#<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:afd20e60,'0.0',9(9)>, low: #<BigDecimal:afd20e24,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,,
+ #<Goods id: nil, name: "13.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:afb6259c,'0.0',9(9)>, low: #<BigDecimal:afb62560,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+
+  :name#<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:afb7a6ec,'0.0',9(9)>, low: #<BigDecimal:afb7a688,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,=>
+ "15.60 "#<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:afb9cb70,'0.0',9(9)>, low: #<BigDecimal:afb9cb20,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,,
+
+  #<Goods id: nil, name: "13.50 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:afbae424,'0.0',9(9)>, low: #<BigDecimal:afbae3e8,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>:price,=>
+"内三元" ,#<Goods id: nil, name: "13.50 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:afbb92ac,'0.0',9(9)>, low: #<BigDecimal:afbb9270,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+, 
+:unit_name =>#<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:afbd62a8,'0.0',9(9)>, low: #<BigDecimal:afbd626c,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>"元/公斤",
+} 
+#<Goods id: nil, name: "13.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:afbe9e5c,'0.0',9(9)>, low: #<BigDecimal:afbe9e20,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.00 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:ace8aefc,'0.0',9(9)>, low: #<BigDecimal:ace8aec0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.50 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:aceb7b00,'0.0',9(9)>, low: #<BigDecimal:aceb7a9c,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "13.80 ", category_id: 7, market_id: 840, date: "2013-11-15", high: #<BigDecimal:ac9eac80,'0.0',9(9)>, low: #<BigDecimal:ac9eac30,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>]
+insert good #<Goods:0xaca9fab8>
+#<Goods id: nil, name: "15.60 ", category_id: 7, market_id: 465, date: "2013-11-15", high: #<BigDecimal:aca9dd30,'0.0',9(9)>, low: #<BigDecimal:aca9dcf4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省泰安市 新泰市 11月15日 生猪价格 14.70  内三元
+{:category_name=>"生猪",
+ :market_name=>"山东省泰安市新泰市",
+ :name=>"14.70 ",
+ :price=>"内三元",
+ :unit_name=>"元/公斤"}
+save_one_day market_id:465 date:2013-11-15
+[#<Goods id: nil, name: "15.60 ", category_id: 7, market_id: 465, date: "2013-11-15", high: #<BigDecimal:af956578,'0.0',9(9)>, low: #<BigDecimal:af95653c,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "15.60 ", category_id: 7, market_id: 465, date: "2013-11-15", high: #<BigDecimal:aca9dd30,'0.0',9(9)>, low: #<BigDecimal:aca9dcf4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>]
+insert good #<Goods:0xb6b4bde0>
+#<Goods id: nil, name: "14.70 ", category_id: 7, market_id: 278, date: "2013-11-15", high: #<BigDecimal:aedd63ec,'0.0',9(9)>, low: #<BigDecimal:aedd63b0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省泰安市 新泰市 11月15日 生猪价格 14.80  外三元
+{:category_name=>"生猪",
+ :market_name=>"山东省泰安市新泰市",
+ :name=>"14.80 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xaa5cdeb0>
+#<Goods id: nil, name: "14.80 ", category_id: 7, market_id: 278, date: "2013-11-15", high: #<BigDecimal:aa5cb8e0,'0.0',9(9)>, low: #<BigDecimal:aa5cb8a4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省泰安市 新泰市 11月15日 生猪价格 14.60  土杂猪
+{:category_name=>"生猪",
+ :market_name=>"山东省泰安市新泰市",
+ :name=>"14.60 ",
+ :price=>"土杂猪",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xab529134>
+#<Goods id: nil, name: "14.60 ", category_id: 7, market_id: 278, date: "2013-11-15", high: #<BigDecimal:ab5307cc,'0.0',9(9)>, low: #<BigDecimal:ab530754,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省威海市 文登市 11月15日 生猪价格 14.80  内三元
+{:category_name=>"生猪",
+insert good #<Goods:0xaca684a0> 
+:market_name#<Goods id: nil, name: "15.60 ", category_id: 7, market_id: 465, date: "2013-11-15", high: #<BigDecimal:aca7644c,'0.0',9(9)>, low: #<BigDecimal:aca76410,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>=>
+"山东省威海市文登市",山东省泰安市 岱岳区 11月15日 生猪价格 15.60  内三元
+
+ {:name:category_name=>=>"14.80 ""生猪",,
+
+  :market_name:price=>"山东省泰安市岱岳区"=>,"内三元"
+, 
+:name =>:unit_name"15.60 "=>"元/公斤",}
+
+ :price=>"内三元",
+ :unit_name=>"元/公斤"}
+save_one_day market_id:278 date:2013-11-15
+[#<Goods id: nil, name: "14.70 ", category_id: 7, market_id: 278, date: "2013-11-15", high: #<BigDecimal:aedd63ec,'0.0',9(9)>, low: #<BigDecimal:aedd63b0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.80 ", category_id: 7, market_id: 278, date: "2013-11-15", high: #<BigDecimal:aa5cb8e0,'0.0',9(9)>, low: #<BigDecimal:aa5cb8a4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.60 ", category_id: 7, market_id: 278, date: "2013-11-15", high: #<BigDecimal:ab5307cc,'0.0',9(9)>, low: #<BigDecimal:ab530754,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>]
+insert good #<Goods:0xac40c430>
+#<Goods id: nil, name: "15.60 ", category_id: 7, market_id: 465, date: "2013-11-15", high: #<BigDecimal:aa897ab0,'0.0',9(9)>, low: #<BigDecimal:aa897a74,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省泰安市 新泰市 11月15日 生猪价格 14.70  内三元
+{:category_name=>"生猪",
+ :market_name=>"山东省泰安市新泰市",
+ :name=>"14.70 ",
+ :price=>"内三元",
+ :unit_name=>"元/公斤"}
+save_one_day market_id:465 date:2013-11-15
+[#<Goods id: nil, name: "15.60 ", category_id: 7, market_id: 465, date: "2013-11-15", high: #<BigDecimal:aca7644c,'0.0',9(9)>, low: #<BigDecimal:aca76410,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "15.60 ", category_id: 7, market_id: 465, date: "2013-11-15", high: #<BigDecimal:aa897ab0,'0.0',9(9)>, low: #<BigDecimal:aa897a74,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>]
+insert good #<Goods:0xabd37394>
+#<Goods id: nil, name: "14.80 ", category_id: 7, market_id: 558, date: "2013-11-15", high: #<BigDecimal:abd350a8,'0.0',9(9)>, low: #<BigDecimal:abd3506c,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省威海市 文登市 11月15日 生猪价格 15.00  外三元
+{:category_name=>"生猪",
+ :market_name=>"山东省威海市文登市",
+ :name=>"15.00 ",
+ :price=>"外三元",insert good #<Goods:0xa9e55e80>
+
+#<Goods id: nil, name: "14.70 ", category_id: 7, market_id: 278, date: "2013-11-15", high: #<BigDecimal:ac6bc93c,'0.0',9(9)>, low: #<BigDecimal:ac6bc900,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil> 
+:unit_name山东省泰安市 新泰市 11月15日 生猪价格 14.80  外三元=>
+"元/公斤"{}:category_name
+=>"生猪",
+ :market_name=>"山东省泰安市新泰市",
+ :name=>"14.80 "insert good #<Goods:0xa8a4e3d8>,
+
+#<Goods id: nil, name: "15.00 ", category_id: 7, market_id: 558, date: "2013-11-15", high: #<BigDecimal:a8a4cc04,'0.0',9(9)>, low: #<BigDecimal:a8a4cbc8,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+ 山东省威海市 文登市 11月15日 生猪价格 14.60  外三元
+{:category_name=>:price"生猪",
+=>"外三元" :market_name,=>
+"山东省威海市文登市" ,:unit_name
+=> "元/公斤":name}=>
+"14.60 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"insert good #<Goods:0xa8aecbf0>}
+
+#<Goods id: nil, name: "14.80 ", category_id: 7, market_id: 278, date: "2013-11-15", high: #<BigDecimal:abcb3120,'0.0',9(9)>, low: #<BigDecimal:abcb30e4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省泰安市 新泰市 11月15日 生猪价格 14.60  土杂猪
+{:category_name=>"生猪",
+ :market_name=>"山东省泰安市新泰市",
+ :name=>insert good #<Goods:0xaf6e1950>"14.60 "
+,#<Goods id: nil, name: "14.60 ", category_id: 7, market_id: 558, date: "2013-11-15", high: #<BigDecimal:af6df40c,'0.0',9(9)>, low: #<BigDecimal:af6df3bc,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+
+山东省威海市 文登市 11月15日 生猪价格 14.60  外三元
+ {:price:category_name=>=>"土杂猪""生猪",,
+
+ :market_name =>:unit_name"山东省威海市文登市"=>,"元/公斤"
+} :name
+=>"14.60 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xb0b7743c>
+#<Goods id: nil, name: "14.60 ", category_id: 7, market_id: 278, date: "2013-11-15", high: #<BigDecimal:b042cdf8,'0.0',9(9)>, low: #<BigDecimal:b042cdbc,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省威海市 文登市 11月15日 生猪价格 14.80  内三元
+{:category_name=>"生猪",
+ :market_nameinsert good #<Goods:0xb1abe10c>
+#<Goods id: nil, name: "14.60 ", category_id: 7, market_id: 558, date: "2013-11-15", high: #<BigDecimal:b1abc000,'0.0',9(9)>, low: #<BigDecimal:b1abbfc4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+=>山东省潍坊市 诸城市 11月15日 生猪价格 15.20  内三元
+{:category_name=>"山东省威海市文登市""生猪",
+ ,:market_name
+=> "山东省潍坊市诸城市":name,=>"14.80 "
+,
+  :name:price=>=>"内三元""15.20 ",
+, 
+ :unit_name:price=>"元/公斤"=>}"内三元"
+,
+ :unit_name=>"元/公斤"}
+save_one_day market_id:278 date:2013-11-15
+[#<Goods id: nil, name: "14.70 ", category_id: 7, market_id: 278, date: "2013-11-15", high: #<BigDecimal:ac6bc93c,'0.0',9(9)>, low: #<BigDecimal:ac6bc900,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,save_one_day market_id:558 date:2013-11-15
+ 
+#<Goods id: nil, name: "14.80 ", category_id: 7, market_id: 278, date: "2013-11-15", high: #<BigDecimal:abcb3120,'0.0',9(9)>, low: #<BigDecimal:abcb30e4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>[,#<Goods id: nil, name: "14.80 ", category_id: 7, market_id: 558, date: "2013-11-15", high: #<BigDecimal:abd350a8,'0.0',9(9)>, low: #<BigDecimal:abd3506c,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+, 
+#<Goods id: nil, name: "14.60 ", category_id: 7, market_id: 278, date: "2013-11-15", high: #<BigDecimal:b042cdf8,'0.0',9(9)>, low: #<BigDecimal:b042cdbc,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil> ]#<Goods id: nil, name: "15.00 ", category_id: 7, market_id: 558, date: "2013-11-15", high: #<BigDecimal:a8a4cc04,'0.0',9(9)>, low: #<BigDecimal:a8a4cbc8,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+,
+ #<Goods id: nil, name: "14.60 ", category_id: 7, market_id: 558, date: "2013-11-15", high: #<BigDecimal:af6df40c,'0.0',9(9)>, low: #<BigDecimal:af6df3bc,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.60 ", category_id: 7, market_id: 558, date: "2013-11-15", high: #<BigDecimal:b1abc000,'0.0',9(9)>, low: #<BigDecimal:b1abbfc4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>]
+insert good #<Goods:0xa949ed9c>
+#<Goods id: nil, name: "14.80 ", category_id: 7, market_id: 558, date: "2013-11-15", high: #<BigDecimal:a949c6b4,'0.0',9(9)>, low: #<BigDecimal:a949c664,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省威海市 文登市 11月15日 生猪价格 15.00  外三元
+{:category_name=>"生猪",
+ :market_name=>"山东省威海市文登市",
+ :name=>insert good #<Goods:0xa94ac2f8>"15.00 "
+,#<Goods id: nil, name: "15.20 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:a94aa4bc,'0.0',9(9)>, low: #<BigDecimal:a94aa480,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+
+山东省潍坊市 诸城市 11月15日 生猪价格 15.50  外三元
+{:category_name=> "生猪",
+:price=> "外三元":market_name,=>
+"山东省潍坊市诸城市" ,:unit_name
+=> "元/公斤":name}=>
+"15.50 ",
+ :price=>"外三元",
+ :unit_nameinsert good #<Goods:0xaa3c0e24>
+#<Goods id: nil, name: "15.00 ", category_id: 7, market_id: 558, date: "2013-11-15", high: #<BigDecimal:a8469bfc,'0.0',9(9)>, low: #<BigDecimal:a8469bac,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省威海市 文登市 11月15日 生猪价格 14.60  外三元
+{:category_name=>"生猪",
+ :market_name=>=>"元/公斤""山东省威海市文登市",}
+
+ :name=>"14.60 ",
+ :price=>"外三元",
+ :unit_name=>insert good #<Goods:0xa6e56414>
+"元/公斤"#<Goods id: nil, name: "15.50 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:a6e54bdc,'0.0',9(9)>, low: #<BigDecimal:a6e54ba0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+}山东省潍坊市 诸城市 11月15日 生猪价格 14.80  土杂猪
+
+{:category_name=>"生猪",
+ :market_name=>"山东省潍坊市诸城市",
+insert good #<Goods:0xa6ec02b0> 
+:name#<Goods id: nil, name: "14.60 ", category_id: 7, market_id: 558, date: "2013-11-15", high: #<BigDecimal:a6db2620,'0.0',9(9)>, low: #<BigDecimal:a6db25e4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>=>
+"14.80 "山东省威海市 文登市 11月15日 生猪价格 14.60  外三元,
+
+{ :category_name:price=>=>"生猪""土杂猪",,
+
+  :market_name:unit_name=>=>"元/公斤""山东省威海市文登市"}
+,
+ :name=>"14.60 ",
+ :price=>"外三元",
+ :unit_nameinsert good #<Goods:0xa8536134>
+#<Goods id: nil, name: "14.80 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:a8a77f44,'0.0',9(9)>, low: #<BigDecimal:a8a77ecc,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+=>山东省潍坊市 临朐县 11月15日 生猪价格 15.00  外三元
+{:category_name=>"元/公斤""生猪",
+} 
+:market_name=>"山东省潍坊市临朐县",
+ :name=>"15.00 ",
+ :price=>"外三元",
+ insert good #<Goods:0xa880cd90>:unit_name=>
+"元/公斤"#<Goods id: nil, name: "14.60 ", category_id: 7, market_id: 558, date: "2013-11-15", high: #<BigDecimal:a69cc4d4,'0.0',9(9)>, low: #<BigDecimal:a69cc45c,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+}山东省潍坊市 诸城市 11月15日 生猪价格 15.20  内三元
+
+{:category_name=>"生猪",
+ :market_name=>"山东省潍坊市诸城市",save_one_day market_id:467 date:2013-11-15
+[#<Goods id: nil, name: "15.20 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:a94aa4bc,'0.0',9(9)>, low: #<BigDecimal:a94aa480,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+, 
+:name =>#<Goods id: nil, name: "15.50 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:a6e54bdc,'0.0',9(9)>, low: #<BigDecimal:a6e54ba0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>"15.20 ",,
+
+ :price #<Goods id: nil, name: "14.80 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:a8a77f44,'0.0',9(9)>, low: #<BigDecimal:a8a77ecc,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>=>]"内三元"
+,
+ :unit_name=>"元/公斤"}
+save_one_day market_id:558 date:2013-11-15
+[#<Goods id: nil, name: "14.80 ", category_id: 7, market_id: 558, date: "2013-11-15", high: #<BigDecimal:a949c6b4,'0.0',9(9)>, low: #<BigDecimal:a949c664,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "15.00 ", category_id: 7, market_id: 558, date: "2013-11-15", high: #<BigDecimal:a8469bfc,'0.0',9(9)>, low: #<BigDecimal:a8469bac,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.60 ", category_id: 7, market_id: 558, date: "2013-11-15", high: #<BigDecimal:a6db2620,'0.0',9(9)>, low: #<BigDecimal:a6db25e4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.60 ", category_id: 7, market_id: 558, date: "2013-11-15", high: #<BigDecimal:a69cc4d4,'0.0',9(9)>, low: #<BigDecimal:a69cc45c,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>]
+insert good #<Goods:0xa6e305c0>
+#<Goods id: nil, name: "15.00 ", category_id: 7, market_id: 244, date: "2013-11-15", high: #<BigDecimal:a5136528,'0.0',9(9)>, low: #<BigDecimal:a51364ec,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+insert good #<Goods:0xa55e31d4>
+#<Goods id: nil, name: "15.20 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:aefa64c4,'0.0',9(9)>, low: #<BigDecimal:aefa6488,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 诸城市 11月15日 生猪价格 15.50  外三元
+{:category_name=>"生猪",
+ :market_name=>"山东省潍坊市诸城市",
+ :name=>"15.50 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xab08e494>
+#<Goods id: nil, name: "15.50 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:ab08ca40,'0.0',9(9)>, low: #<BigDecimal:ab08ca04,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 诸城市 11月15日 生猪价格 14.80  土杂猪
+{:category_name=>"生猪",
+ :market_name=>"山东省潍坊市诸城市",
+ :name=>"14.80 ",
+ :price=>"土杂猪",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xac5f68e0>
+#<Goods id: nil, name: "14.80 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:ab056468,'0.0',9(9)>, low: #<BigDecimal:ab05642c,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 临朐县 11月15日 生猪价格 15.00  外三元
+{:category_name=>"生猪",
+ :market_name=>"山东省潍坊市临朐县",
+ :name=>"15.00 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"}
+save_one_day market_id:467 date:2013-11-15
+[#<Goods id: nil, name: "15.20 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:aefa64c4,'0.0',9(9)>, low: #<BigDecimal:aefa6488,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "15.50 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:ab08ca40,'0.0',9(9)>, low: #<BigDecimal:ab08ca04,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.80 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:ab056468,'0.0',9(9)>, low: #<BigDecimal:ab05642c,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>]
+insert good #<Goods:0xab0aca34>
+#<Goods id: nil, name: "15.00 ", category_id: 7, market_id: 244, date: "2013-11-15", high: #<BigDecimal:ab0ab3dc,'0.0',9(9)>, low: #<BigDecimal:ab0ab3a0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+date 2013-09-27
+date 2013-09-26
+date 2013-09-25
+date 2013-09-25
+date 2013-09-23
+date 2013-09-23
+date 2013-09-20
+date 2013-09-18
+date 2013-09-17
+date 2013-09-16
+date 2013-09-16
+date 2013-09-13
+date 2013-09-12
+date 2013-09-11
+date 2013-09-11
+date 2013-09-11
+date 2013-09-09
+date 2013-09-09
+date 2013-09-06
+date 2013-09-05
+date 2013-09-04
+date 2013-09-04
+date 2013-09-03
+date 2013-09-02
+date 2013-09-02
+date 2013-08-30
+date 2013-08-29
+date 2013-08-28
+date 2013-08-28
+date 2013-08-28
+date 2013-08-27
+date 2013-08-27
+date 2013-08-27
+date 2013-08-26
+date 2013-08-26
+date 2013-08-24
+date 2013-08-23
+date 2013-08-22
+date 2013-08-22
+date 2013-08-21
+date 2013-08-21
+date 2013-08-20
+date 2013-08-20
+get_one_page ...
+process_sub_page ...
+山东省潍坊市 诸城市 11月15日 生猪价格 14.70  内三元
+{:category_name=>"生猪",
+ :market_name=>"山东省潍坊市诸城市",
+ :name=>"14.70 ",
+ :price=>"内三元",
+ :unit_name=>"元/公斤"}
+save_one_day market_id:244 date:2013-11-15
+[#<Goods id: nil, name: "15.00 ", category_id: 7, market_id: 244, date: "2013-11-15", high: #<BigDecimal:a5136528,'0.0',9(9)>, low: #<BigDecimal:a51364ec,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>]
+insert good #<Goods:0xab398d4c>
+#<Goods id: nil, name: "14.70 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:a94b2400,'0.0',9(9)>, low: #<BigDecimal:a94b2be4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 诸城市 11月15日 生猪价格 14.90  外三元
+{:category_name=>"生猪",
+ :market_name=>"山东省潍坊市诸城市",
+ :name=>"14.90 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xaae86db8>
+#<Goods id: nil, name: "14.90 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:acac78d8,'0.0',9(9)>, low: #<BigDecimal:acac7be4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 诸城市 11月15日 生猪价格 14.40  土杂猪
+{:category_name=>"生猪",
+ :market_name=>"山东省潍坊市诸城市",
+ :name=>"14.40 ",
+ :price=>"土杂猪",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xacecade0>
+#<Goods id: nil, name: "14.40 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:ace88274,'0.0',9(9)>, low: #<BigDecimal:ace88954,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 青州市 11月15日 生猪价格 14.30  内三元
+{:category_name=>"生猪",
+ :market_name=>"山东省潍坊市青州市",
+ :name=>"14.30 ",
+ :price=>"内三元",
+ :unit_name=>"元/公斤"}
+save_one_day market_id:467 date:2013-11-15
+[#<Goods id: nil, name: "14.70 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:a94b2400,'0.0',9(9)>, low: #<BigDecimal:a94b2be4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.90 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:acac78d8,'0.0',9(9)>, low: #<BigDecimal:acac7be4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.40 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:ace88274,'0.0',9(9)>, low: #<BigDecimal:ace88954,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>]
+process_sub_page ...
+山东省潍坊市 诸城市 11月15日 生猪价格 14.70  内三元
+insert good #<Goods:0xaf9c610c>{:category_name
+=>#<Goods id: nil, name: "14.30 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:af927ed0,'0.0',9(9)>, low: #<BigDecimal:af927ffc,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>"生猪"
+,山东省潍坊市 青州市 11月15日 生猪价格 15.40  外三元
+
+ {:market_name:category_name=>=>"山东省潍坊市诸城市""生猪",,
+ 
+:name =>"14.70 ":market_name,=>
+"山东省潍坊市青州市" ,:price
+=> "内三元",:name
+=> "15.40 ":unit_name,=>
+"元/公斤" }
+:price=>"外三元",
+ :unit_name=>"元/公斤"}
+save_one_day market_id:244 date:2013-11-15
+[#<Goods id: nil, name: "15.00 ", category_id: 7, market_id: 244, date: "2013-11-15", high: #<BigDecimal:ab0ab3dc,'0.0',9(9)>, low: #<BigDecimal:ab0ab3a0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>]
+insert good #<Goods:0xb17cc624>
+#<Goods id: nil, name: "15.40 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:b1780bd4,'0.0',9(9)>, low: #<BigDecimal:b1780cb0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 青州市 11月15日 生猪价格13.30  土杂猪
+{:category_name=>"生猪"insert good #<Goods:0xb19c30b8>,
+#<Goods id: nil, name: "14.70 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:b194acd0,'0.0',9(9)>, low: #<BigDecimal:b194aeec,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+
+ 山东省潍坊市 诸城市 11月15日 生猪价格 14.90  外三元:market_name
+{=>:category_name"山东省潍坊市青州市"=>,"生猪",
+
+  :name=>:market_name"13.30 "=>,"山东省潍坊市诸城市"
+, 
+:price :name=>=>"土杂猪""14.90 ",,
+
+  :unit_name:price=>=>"元/公斤""外三元"},
+
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0x8eb6ec0>
+#<Goods id: nil, name: "13.30 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:9569308,'0.0',9(9)>, low: #<BigDecimal:9569218,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 昌邑市 11月15日 生猪价格 15.50  内三元
+{:category_nameinsert good #<Goods:0x96024b8>=>
+"生猪"#<Goods id: nil, name: "14.90 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:87cffbc,'0.0',9(9)>, low: #<BigDecimal:87cff44,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+
+山东省潍坊市 诸城市 11月15日 生猪价格 14.40  土杂猪
+ {:market_name:category_name=>=>"山东省潍坊市昌邑市""生猪",,
+
+  :market_name:name=>=>"山东省潍坊市诸城市""15.50 ",,
+
+  :price:name=>=>"内三元""14.40 ",,
+
+  :price:unit_name=>=>"土杂猪""元/公斤",
+} 
+:unit_name=>"元/公斤"}
+save_one_day market_id:466 date:2013-11-15
+[insert good #<Goods:0x8934a60>#<Goods id: nil, name: "14.30 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:af927ed0,'0.0',9(9)>, low: #<BigDecimal:af927ffc,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+,#<Goods id: nil, name: "14.40 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:93d5294,'0.0',9(9)>, low: #<BigDecimal:93d5190,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+
+ 山东省潍坊市 青州市 11月15日 生猪价格 14.30  内三元#<Goods id: nil, name: "15.40 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:b1780bd4,'0.0',9(9)>, low: #<BigDecimal:b1780cb0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+,{
+:category_name #<Goods id: nil, name: "13.30 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:9569308,'0.0',9(9)>, low: #<BigDecimal:9569218,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>=>]"生猪"
+,
+ :market_name=>"山东省潍坊市青州市",
+ :name=>"14.30 ",
+ :price=>"内三元",
+ :unit_name=>"元/公斤"}
+save_one_day market_id:467 date:2013-11-15
+[#<Goods id: nil, name: "14.70 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:b194acd0,'0.0',9(9)>, low: #<BigDecimal:b194aeec,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.90 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:87cffbc,'0.0',9(9)>, low: #<BigDecimal:87cff44,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.40 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:93d5294,'0.0',9(9)>, low: #<BigDecimal:93d5190,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>]
+insert good #<Goods:0x98fa4e0>
+#<Goods id: nil, name: "15.50 ", category_id: 7, market_id: 469, date: "2013-11-15", high: #<BigDecimal:93614fc,'0.0',9(9)>, low: #<BigDecimal:9361498,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 昌邑市 11月15日 生猪价格 15.80  外三元
+{:category_name=>"生猪",
+ :market_name=>"山东省潍坊市昌邑市",
+ :name=>"15.80 ",
+ :price=>"外三元",insert good #<Goods:0x996e8e0>
+
+ #<Goods id: nil, name: "14.30 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:98b2320,'0.0',9(9)>, low: #<BigDecimal:98b22a8,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>:unit_name
+=>山东省潍坊市 青州市 11月15日 生猪价格 15.40  外三元"元/公斤"
+{}:category_name
+=>"生猪",
+ :market_name=>"山东省潍坊市青州市",
+ :name=>"15.40 ",
+ :priceinsert good #<Goods:0x9cc0048>=>
+"外三元"#<Goods id: nil, name: "15.80 ", category_id: 7, market_id: 469, date: "2013-11-15", high: #<BigDecimal:9cbd3d4,'0.0',9(9)>, low: #<BigDecimal:9cbd2e4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+
+山东省潍坊市 青州市 11月15日 生猪价格 15.10  内三元
+ {:unit_name:category_name=>=>"元/公斤""生猪"},
+
+ :market_name=>"山东省潍坊市青州市",
+ :name=>"15.10 ",
+ :price=>"内三元",insert good #<Goods:0x9759dd4>
+
+ #<Goods id: nil, name: "15.40 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:975fd88,'0.0',9(9)>, low: #<BigDecimal:975fd38,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>:unit_name
+=>山东省潍坊市 青州市 11月15日 生猪价格13.30  土杂猪"元/公斤"
+{}:category_name
+=>"生猪",
+ :market_name=>"山东省潍坊市青州市",
+ :name=>"13.30 ",
+save_one_day market_id:469 date:2013-11-15
+ [:price#<Goods id: nil, name: "15.50 ", category_id: 7, market_id: 469, date: "2013-11-15", high: #<BigDecimal:93614fc,'0.0',9(9)>, low: #<BigDecimal:9361498,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>=>,"土杂猪"
+, 
+#<Goods id: nil, name: "15.80 ", category_id: 7, market_id: 469, date: "2013-11-15", high: #<BigDecimal:9cbd3d4,'0.0',9(9)>, low: #<BigDecimal:9cbd2e4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil> ]:unit_name
+=>"元/公斤"}
+insert good #<Goods:0x9aed5f4>
+#<Goods id: nil, name: "13.30 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:9aeac64,'0.0',9(9)>, low: #<BigDecimal:9aeabc4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 昌邑市 11月15日 生猪价格 15.50  内三元
+{:category_name=>"生猪",
+ :market_name=>"山东省潍坊市昌邑市",
+ :name=>"15.50 ",
+ :price=>"内三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0x9a13b4c>
+#<Goods id: nil, name: "15.10 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:9621afc,'0.0',9(9)>, low: #<BigDecimal:9621ac0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 青州市 11月15日 生猪价格 15.40  外三元
+{:category_name=>save_one_day market_id:466 date:2013-11-15
+[#<Goods id: nil, name: "14.30 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:98b2320,'0.0',9(9)>, low: #<BigDecimal:98b22a8,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,"生猪"
+ #<Goods id: nil, name: "15.40 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:975fd88,'0.0',9(9)>, low: #<BigDecimal:975fd38,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,,
+
+ :market_name=>"山东省潍坊市青州市" #<Goods id: nil, name: "13.30 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:9aeac64,'0.0',9(9)>, low: #<BigDecimal:9aeabc4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,]
+
+ :name=>"15.40 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0x99fb40c>
+#<Goods id: nil, name: "15.40 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:9785114,'0.0',9(9)>, low: #<BigDecimal:9785088,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 青州市 11月15日 生猪价格 14.70  土杂猪
+insert good #<Goods:0x9d52bdc>
+{#<Goods id: nil, name: "15.50 ", category_id: 7, market_id: 469, date: "2013-11-15", high: #<BigDecimal:9d59464,'0.0',9(9)>, low: #<BigDecimal:9d59428,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+:category_name山东省潍坊市 昌邑市 11月15日 生猪价格 15.80  外三元
+{:category_name=>=>"生猪",
+"生猪" ,:market_name
+=> "山东省潍坊市昌邑市":market_name,=>
+"山东省潍坊市青州市" ,:name
+ =>:name"15.80 "=>,"14.70 "
+, :price
+=>"外三元" :price,=>
+"土杂猪" ,:unit_name
+=> "元/公斤":unit_name}=>
+"元/公斤"}
+insert good #<Goods:0x9c43368>insert good #<Goods:0x9ec9088>
+#<Goods id: nil, name: "14.70 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:9f5f13c,'0.0',9(9)>, low: #<BigDecimal:9f5f0b0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+
+山东省潍坊市 青州市 11月15日 生猪价格 14.30  内三元
+{#<Goods id: nil, name: "15.80 ", category_id: 7, market_id: 469, date: "2013-11-15", high: #<BigDecimal:9f60bf4,'0.0',9(9)>, low: #<BigDecimal:9f60ba4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>:category_name
+=>山东省潍坊市 青州市 11月15日 生猪价格 15.10  内三元"生猪",
+{
+:category_name =>:market_name"生猪"=>"山东省潍坊市青州市",
+, 
+ :market_name:name=>=>"山东省潍坊市青州市""14.30 ",,
+
+  :name:price=>=>"15.10 ""内三元",,
+
+ :price =>:unit_name"内三元"=>,"元/公斤"
+} 
+:unit_name=>"元/公斤"}
+insert good #<Goods:0x94b44d0>
+#<Goods id: nil, name: "14.30 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:a4553bc,'0.0',9(9)>, low: #<BigDecimal:a455380,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 青州市 11月15日 生猪价格 15.40  外三元
+{:category_namesave_one_day market_id:469 date:2013-11-15=>"生猪",
+
+[ #<Goods id: nil, name: "15.50 ", category_id: 7, market_id: 469, date: "2013-11-15", high: #<BigDecimal:9d59464,'0.0',9(9)>, low: #<BigDecimal:9d59428,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>:market_name,=>
+"山东省潍坊市青州市" ,#<Goods id: nil, name: "15.80 ", category_id: 7, market_id: 469, date: "2013-11-15", high: #<BigDecimal:9f60bf4,'0.0',9(9)>, low: #<BigDecimal:9f60ba4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+] 
+:name=>"15.40 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xa4539b8>
+#<Goods id: nil, name: "15.10 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:a674a08,'0.0',9(9)>, low: #<BigDecimal:a6749cc,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 青州市 11月15日 生猪价格 15.40  外三元
+{:category_name=>"生猪",
+insert good #<Goods:0xb5649c80>
+#<Goods id: nil, name: "15.40 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:9f0c554,'0.0',9(9)>, low: #<BigDecimal:9f0c518,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 青州市 11月15日 生猪价格 13.30  土杂猪
+{:category_name=>"生猪",
+  :market_name=>"山东省潍坊市青州市":market_name,=>
+"山东省潍坊市青州市" ,:name
+=> "15.40 ":name,=>
+"13.30 " ,:price=>
+"外三元" ,:price
+=> "土杂猪":unit_name,=>
+"元/公斤" }:unit_name
+=>"元/公斤"}
+insert good #<Goods:0xb27f134c>
+#<Goods id: nil, name: "15.40 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:b2814c34,'0.0',9(9)>, low: #<BigDecimal:b2814bf8,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+insert good #<Goods:0xb2816570>
+#<Goods id: nil, name: "13.30 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:b6652a8c,'0.0',9(9)>, low: #<BigDecimal:b6652a3c,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 青州市 11月15日 生猪价格 14.70  土杂猪
+{:category_name=>山东省潍坊市 诸城市 11月15日 生猪价格 14.60  内三元
+{:category_name=>"生猪",
+"生猪",
+  :market_name:market_name=>=>"山东省潍坊市青州市""山东省潍坊市诸城市",,
+
+  :name:name=>"14.70 "=>,"14.60 "
+, 
+ :price:price=>=>"土杂猪""内三元",,
+
+  :unit_name:unit_name=>=>"元/公斤""元/公斤"}}
+
+insert good #<Goods:0xb642df04>
+#<Goods id: nil, name: "14.70 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:b175685c,'0.0',9(9)>, low: #<BigDecimal:b17567f8,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 青州市 11月15日 生猪价格 14.30  内三元
+{:category_name=>save_one_day market_id:466 date:2013-11-15"生猪",
+
+ :market_name[=>#<Goods id: nil, name: "15.10 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:9621afc,'0.0',9(9)>, low: #<BigDecimal:9621ac0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>"山东省潍坊市青州市",,
+
+  #<Goods id: nil, name: "15.40 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:9785114,'0.0',9(9)>, low: #<BigDecimal:9785088,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>:name,
+=> "14.30 "#<Goods id: nil, name: "14.70 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:9f5f13c,'0.0',9(9)>, low: #<BigDecimal:9f5f0b0,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,,
+
+  #<Goods id: nil, name: "14.30 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:a4553bc,'0.0',9(9)>, low: #<BigDecimal:a455380,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,:price
+=> "内三元"#<Goods id: nil, name: "15.40 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:9f0c554,'0.0',9(9)>, low: #<BigDecimal:9f0c518,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,,
+ 
+:unit_name =>#<Goods id: nil, name: "13.30 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:b6652a8c,'0.0',9(9)>, low: #<BigDecimal:b6652a3c,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>"元/公斤"]}
+
+insert good #<Goods:0xb177f518>
+#<Goods id: nil, name: "14.30 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:b178b700,'0.0',9(9)>, low: #<BigDecimal:b178b6c4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 青州市 11月15日 生猪价格 15.40  外三元
+{:category_name=>"生猪",
+ :market_name=>"山东省潍坊市青州市",
+ :name=>"15.40 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xb17b508c>
+#<Goods id: nil, name: "15.40 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:b17b1f40,'0.0',9(9)>, low: #<BigDecimal:b17b1f04,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 青州市 11月15日 生猪价格 13.30  土杂猪
+{:category_name=>"生猪",
+ :market_name=>"山东省潍坊市青州市",
+ :name=>"13.30 ",
+ :price=>"土杂猪",insert good #<Goods:0xb642c2d0>
+
+ #<Goods id: nil, name: "14.60 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:b1753ddc,'0.0',9(9)>, low: #<BigDecimal:b1753d3c,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+:unit_name山东省潍坊市 诸城市 11月15日 生猪价格 14.80  外三元
+{:category_name=>=>"生猪""元/公斤",}
+
+ :market_name=>"山东省潍坊市诸城市",
+ :name=>"14.80 ",
+ :price=>"外三元",
+ :unit_nameinsert good #<Goods:0xb191c45c>=>
+"元/公斤"#<Goods id: nil, name: "13.30 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:b191ac74,'0.0',9(9)>, low: #<BigDecimal:b191ac38,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+}山东省潍坊市 诸城市 11月15日 生猪价格 14.60  内三元
+{
+:category_name=>"生猪",
+ :market_name=>"山东省潍坊市诸城市",
+ :name=>"14.60 "insert good #<Goods:0xb192fe6c>,
+
+#<Goods id: nil, name: "14.80 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:b192e594,'0.0',9(9)>, low: #<BigDecimal:b192e544,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+ 山东省潍坊市 诸城市 11月15日 生猪价格 14.40  土杂猪:price
+=>{"内三元":category_name,=>
+"生猪" :unit_name,=>
+"元/公斤" }
+:market_name=>"山东省潍坊市诸城市",
+ :name=>"14.40 ",
+ :price=>"土杂猪",save_one_day market_id:466 date:2013-11-15
+
+ [:unit_name#<Goods id: nil, name: "15.10 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:a674a08,'0.0',9(9)>, low: #<BigDecimal:a6749cc,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>=>,"元/公斤"
+} 
+#<Goods id: nil, name: "15.40 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:b2814c34,'0.0',9(9)>, low: #<BigDecimal:b2814bf8,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.70 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:b175685c,'0.0',9(9)>, low: #<BigDecimal:b17567f8,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "14.30 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:b178b700,'0.0',9(9)>, low: #<BigDecimal:b178b6c4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+ #<Goods id: nil, name: "15.40 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:b17b1f40,'0.0',9(9)>, low: #<BigDecimal:b17b1f04,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>,
+insert good #<Goods:0xb1958830>
+#<Goods id: nil, name: "14.40 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:b1956454,'0.0',9(9)>, low: #<BigDecimal:b1956418,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+ #<Goods id: nil, name: "13.30 ", category_id: 7, market_id: 466, date: "2013-11-15", high: #<BigDecimal:b191ac74,'0.0',9(9)>, low: #<BigDecimal:b191ac38,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>]
+insert good #<Goods:0xb193a844>
+#<Goods id: nil, name: "14.60 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:b194a910,'0.0',9(9)>, low: #<BigDecimal:b194a8d4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 诸城市 11月15日 生猪价格 14.80  外三元
+{:category_name=>"生猪",
+ :market_name=>"山东省潍坊市诸城市",
+ :name=>"14.80 ",
+ :price=>"外三元",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xb19d7bd0>
+#<Goods id: nil, name: "14.80 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:b6976d30,'0.0',9(9)>, low: #<BigDecimal:b6976cf4,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>
+山东省潍坊市 诸城市 11月15日 生猪价格 14.40  土杂猪
+{:category_name=>"生猪",
+ :market_name=>"山东省潍坊市诸城市",
+ :name=>"14.40 ",
+ :price=>"土杂猪",
+ :unit_name=>"元/公斤"}
+insert good #<Goods:0xb16205dc>
+#<Goods id: nil, name: "14.40 ", category_id: 7, market_id: 467, date: "2013-11-15", high: #<BigDecimal:b161eda4,'0.0',9(9)>, low: #<BigDecimal:b161ed68,'0.0',9(9)>, unit_id: 1, created_at: nil, updated_at: nil>

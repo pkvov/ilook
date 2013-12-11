@@ -1,0 +1,24 @@
+-# coding: utf-8
+.row
+  - form_tag url(:sessions, :create), :class=>'login form-horizontal span6 offset2' do
+    .login-header.modal-header
+    .login-body.modal-body
+      = [:error, :warning, :notice].map { |type| flash_tag(type, :class => "alert alert-#{type} fade in", :bootstrap => true) }.join.html_safe
+
+      %fieldset.control-group
+        %label.login-input-label.control-label{:for => :email}= pat('login.email')
+        .login-controls.controls=email_field_tag :email, :value => params[:email], :autofocus => true
+      %fieldset.control-group
+        %label.login-input-label.control-label{:for => :password}= pat('login.password')
+        .login-controls.controls=password_field_tag :password, :value => params[:password]
+
+    .login-footer.modal-footer
+      =submit_tag(pat('login.sign_in'), :class => 'btn btn-primary pull-right')
+.row
+  .spn4.offset4
+    使用合作网站登入
+    %a{:href => "https://api.weibo.com/oauth2/authorize?client_id=2472926561&response_type=code&redirect_uri=http://127.0.0.1:3000/login/weibo"}
+      %img{:src => "/images/sina.png"}
+    %img{:src => "/images/sohu.png"}
+    %img{:src => "/images/tx.png"}
+    %img{:src => "/images/wy.png"}

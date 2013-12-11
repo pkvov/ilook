@@ -1,0 +1,16 @@
+-# coding: utf-8
+- if @items
+  - @items.each do |item|
+    %h4
+      = p item.title
+    %h5
+      = p item.source
+      - diff = Time.now - item.created_at
+      - h = (diff / 1.hour).round
+      - m = (diff / 1.minute).round
+      = p h == 0 ? "#{m}分钟前" : "#{h}小时前"
+    %p
+      = p item.brief
+    %a{:href => "/news/detail?id=#{item.id}"}
+      继续阅读
+    

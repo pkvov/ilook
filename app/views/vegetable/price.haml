@@ -1,0 +1,90 @@
+-# coding: utf-8
+选择条件:
+%p 
+  地区
+  %ul{:class => "inline nav"}
+    %li{:class => ("active" if @filter[:current_area_id].nil?)}
+      %a{:href => "/vegetable/price?area_id=&market_id=#{@filter[:current_market_id]}&category_id=#{@filter[:current_category_id]}&date=#{@filter[:current_date]}"}
+        不限
+    -@filter[:areas].each do |a|
+      %li{:class => ("active" if @filter[:current_area_id] == a.id)}
+        %a{:href => "/vegetable/price?area_id=#{a.id}&market_id=#{@filter[:current_market_id]}&category_id=#{@filter[:current_category_id]}&date=#{@filter[:current_date]}"}
+          = a[:name]
+%p
+  市场
+  %ul{:class => "inline nav"}
+    %li{:class => ("active" if @filter[:current_area_id].nil?)}
+      %a{:href => "/vegetable/price?area_id=#{@filter[:current_area_id]}&market_id=&category_id=#{@filter[:current_category_id]}&date=#{@filter[:current_date]}"}
+        不限
+    -if @filter[:markets] then
+      -@filter[:markets].each do |m|
+        %li{:class => ('active' if @filter[:current_market_id] == m.id)}
+          %a{:href => "/vegetable/price?area_id=#{@filter[:current_area_id]}&market_id=#{m.id}&category_id=#{@filter[:current_category_id]}&date=#{@filter[:current_date]}"}
+            = m[:name]
+%p
+  品种
+  %ul{:class => "inline nav"}
+    %li{:class => ("active" if @filter[:current_area_id].nil?)}
+      %a{:href => "/vegetable/price?area_id=#{@filter[:current_area_id]}&market_id=#{@filter[:current_market_id]}&category_id=&date=#{@filter[:current_date]}"}
+        不限
+    -@filter[:categories].each  do |c|
+      %li{:class =>  ('active' if @filter[:current_category_id] == c.id)}
+        %a{:href => "/vegetable/price?area_id=#{@filter[:current_area_id]}&market_id=#{@filter[:current_market_id]}&category_id=#{c.id}&date=#{@filter[:current_date]}"}
+          = c[:name]
+%p
+  日期
+#dp3.input-append.date.form_date{"data-date" => @filter[:current_date], "data-date-format" => "yyyy-mm-dd"}
+  %input.span2{:readonly => "", :size => "16", :type => "text", :value => @filter[:current_date]}
+    %span.add-on
+      %i.icon-remove
+    %span.add-on
+      %i.icon-calendar
+
+:javascript
+  function dateFormat(date, format) {
+    // Calculate date parts and replace instances in format string accordingly
+    format = format.replace("DD", (date.getDate() < 10 ? '0' : '') + date.getDate()); // Pad with '0' if needed
+    format = format.replace("MM", (date.getMonth() < 9 ? '0' : '') + (date.getMonth() + 1)); // Months are zero-based
+    format = format.replace("YYYY", date.getFullYear());
+    return format;
+  }
+
+  $(document).ready(function() {
+    $.fn.datetimepicker.dates['cn'] = {
+      days: ['星期日','星期一','星期二','星期三','星期四','星期五','星期六', '星期日'],
+      daysShort: ["日", "一", "二", "三", "四", "五", "六", "日"],
+      daysMin: ["日", "一", "二", "三", "四", "五", "六", "日"],
+      months: ['一月','二月','三月','四月','五月','六月', '七月','八月','九月','十月','十一月','十二月'],
+      monthsShort: ['一','二','三','四','五','六', '七','八','九','十','十一','十二'],
+      meridiem: ["上午", "下午"],
+      suffix: ["st", "nd", "rd", "th"],
+      today: "今天"
+    };
+
+    $('.form_date').datetimepicker({
+      language:  'cn',
+      weekStart: 1,
+      autoclose: 1,
+      todayHighlight: 1,
+      startView: 2,
+      minView: 2,
+      forceParse: 0
+    });
+    
+    $('.form_date').datetimepicker().on('changeDate', function(ev){
+      date_s = dateFormat(ev.date, 'YYYY-MM-DD')
+      date_url = "#{escape_javascript get_date_changed_url()}" + date_s;
+      window.location = date_url;
+    });
+
+    $('.icon-remove').click(function(){
+      date_url = "#{escape_javascript get_date_changed_url()}";
+      window.location = date_url;
+    });
+  })
+
+%p
+  = partial('/vegetable/show')
+= javascript_include_tag 'bootstrap-datetimepicker'
+
+

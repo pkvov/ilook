@@ -1,0 +1,190 @@
+# -*- coding: utf-8 -*-
+# http://www.vegnet.com.cn
+
+require 'mechanize'
+require File.expand_path('../spider_helper', __FILE__)
+
+class Vegnet
+
+  def initialize()
+    @agent = Mechanize.new
+    @agent.set_proxy 'localhost', 8087
+    @agent.user_agent_alias = 'Windows Mozilla'
+    path = File.join(Padrino.root, 'workers', 'config')
+    FileUtils.makedirs(path) unless File.exists?(path)
+    @hash_config_path = File.join(path, "vegnet_area_market_hash.json")
+
+  end
+
+  def refresh_today
+    refresh_area_market
+    @area_market_hash.each { |key, item|
+      area_id = key.to_i
+      area_name = item["name"]
+      item["markets"].each { |market|
+        process_pages(area_name, area_id, market)
+      }
+    }
+
+  end
+
+  def refresh_all
+    refresh_area_market
+    @area_market_hash.each { |key, item|
+      area_id = key.to_i
+      area_name = item["name"]
+      item["markets"].each { |market|
+        process_pages(area_name, area_id, market, false)
+      }
+    }
+  end
+
+  def refresh_area_market
+    if File.exists?(@hash_config_path)
+      File.open(@hash_config_path, 'r') do  |f|
+        @area_market_hash = parse_json(f.read)
+      end
+      return
+    end
+    
+    url = "http://www.vegnet.com.cn/Price"
+    page = @agent.get(url)
+    areas = page.root.css('//select[@id = "selectArea"] > option')
+    @area_market_hash = Hash.new
+    #json formate
+    areas.each {|area|
+      area_id = area["value"]
+      next if area_id.nil? || area_id == 0
+      area_name = area.text
+      get_market_url = "http://www.vegnet.com.cn/Market/GetMarketByAreaID?areaID=#{area_id}"
+      page = @agent.get(get_market_url)
+      market_array = parse_json(page.body)
+      next if market_array.nil? || market_array.empty?
+      market_hash = market_array
+      #pp market_hash
+      area_item = Hash.new
+      markets = Array.new
+      market_hash.each {|market| 
+        next if market.nil?
+        #pp market
+        market_item = Hash.new
+        market_item["name"] = market["Name"]
+        market_id = market["MarketID"]
+        market_item["id"] = market_id
+        markets << market_item
+      }
+      area_item["id"] = area_id
+      area_item["name"] = area_name
+      area_item["markets"] = markets
+      @area_market_hash[area_id] = area_item
+    }    
+    save_hash(@hash_config_path, @area_market_hash)
+  end
+
+  private
+
+  def parse_json(json)
+    JSON.parse(json) if json && json.length >= 2
+  end
+
+  def save_hash(path, hash)
+   dir = File.dirname(path)
+    FileUtils.makedirs(dir) unless File.exists?(dir)
+    File.open(path, 'w') { |f|
+      f.write(hash.to_json)
+    }
+  end
+
+  def process_pages(area_name, area_id , market, is_today = true)
+    market_name = market["name"]
+    market_id = market["id"]
+
+    #read last page_index
+    if market["prev_date_page_index"] && (! is_today)
+      page_index =  market["prev_date_page_index"].to_i
+    else
+      page_index = 1
+    end
+    puts "page_index:#{page_index}"
+    prev_date_page_index = page_index
+    url = "http://www.vegnet.com.cn/Price/list_ar#{area_id}_p#{page_index}.html?marketID=#{market_id}"
+    page = @agent.get(url)
+    next_page_link = page.root.css('div.Pager > a').select {|link| link.text == '下一页'}
+    if market["prev_date"] && (! is_today)
+      prev_date = market["prev_date"]
+    else
+      prev_date = ""
+    end
+    puts "prev_date:#{prev_date}"
+
+    database_market_id = Market.find_by_name(market_name).id;
+    puts "database_market_id #{database_market_id}"
+    goods = []
+
+    until next_page_link.nil? || next_page_link.empty?
+      print "."
+      page.root.css('//div.pri_k > p').each { |item|
+        date = item.children[1].text[1..-2]
+        puts "date:#{date}"
+        
+        if Padrino.env == :development
+          return if Time.now.year != Date.parse(date).year
+        end
+
+        name = item.children[2].text
+        price_low = item.children[4].text.delete('￥').to_d
+        price_high = item.children[5].text.delete('￥').to_d
+        price_avg = item.children[6].text.delete('￥').to_d
+        unit = item.children[7].text.gsub('(kg)', '').strip
+        
+        if unit == "元/千克"
+          database_unit_id = 1
+        else
+          database_unit_id = SpiderHelper.get_unit_id(unit)
+        end
+
+        good = Goods.new
+        good.name = name
+        good.market_id = database_market_id
+        good.category_id = SpiderHelper.get_category_id(name)
+        good.high = price_high
+        good.low = price_low
+        if price_low == 0 && price_high == 0 && price_avg != 0
+          good.high = price_avg
+          good.low = price_avg
+        end
+        good.unit_id = database_unit_id
+        good.date = date
+        if (prev_date != "") && (prev_date != date)
+          #save to database
+          SpiderHelper.save_one_day(database_market_id, prev_date.to_date, goods, true)
+          goods = []
+          prev_date_page_index = page_index
+          return if is_today            
+        end
+        goods << good
+        prev_date = date
+      }
+
+      begin
+        page_index = page_index + 1
+        url = "http://www.vegnet.com.cn/Price/list_ar#{area_id}_p#{page_index}.html?marketID=#{market_id}"
+        page = @agent.get(url);
+        next_page_link = page.root.css('div.Pager > a').select {|link| link.text == '下一页'}
+      rescue => e
+        puts  e
+      ensure
+        if ! is_today
+          market["prev_date_page_index"] = prev_date_page_index
+          market["prev_date"] = prev_date
+          #save hash file
+          save_hash(@hash_config_path, @area_market_hash)
+        end
+      end
+    end
+    #save last page
+    if (goods.count > 0)
+      SpiderHelper.save_one_day(database_market_id, prev_date.to_date, goods, true)
+    end
+  end
+end

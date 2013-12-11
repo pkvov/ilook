@@ -1,0 +1,9 @@
+development:
+  bin_path: /usr/local/coreseek/bin
+  mem_limit: 128M
+  config_file: config/development.sphinx.conf
+  charset_type: zh_cn.utf-8
+  charset_dictpath: <%= File.join Padrino.root, "store" %> 
+  pid_file: "/tmp/searchd.development.pid"       
+  stopwords: <%= File.join Padrino.root, "store", "stopwords_en.txt" %>  <%= File.join Padrino.root, "store", "stopwords_cn.txt" %>   
+  ngram_len: 0

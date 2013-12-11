@@ -1,0 +1,46 @@
+#!/bin/sh
+if [ -z "$1" ]; then
+    echo "start server"
+    #start goagent proxy
+    nohup python ~/software/goagent-2.1.5/local/proxy.py > /dev/null 2>&1 &
+    echo "goagent started"
+    #start redis-server
+    nohup redis-server > /dev/null 2>&1 &
+    echo "redis-server started"
+    #start sidekiq
+    nohup bundle exec sidekiq -e production &
+    echo "sidekiq started"
+    #start searchd
+    padrino rake ts:rebuild INDEX_ONLY=true SPHINX_VERSION=2.0.6 -e production
+    echo "searchd started"
+    #start clockwork
+    nohup clockwork workers/refresh_quote.rb > /dev/null 2>&1&
+    echo "clockwork started"
+    #start server
+    #padrino start -h="0.0.0.0" -e production
+    #start with corn
+    #unicorn -c ./config/unicorn.conf.rb -E production -D -l 0.0.0.0:3003
+    bundle exec unicorn -c ./config/unicorn.conf.rb -E production -D -l 0.0.0.0:3001
+    echo "unicorn started"
+else
+    echo "stop server"
+
+    ps aux | grep clockwork | awk '{print $2}' | xargs kill -9
+
+    #padrino rake ts:stop -e production
+    ps aux | grep sphinx | awk '{print $2}' | xargs kill -9
+
+    ps aux | grep sidekiq | awk '{print $2}' | xargs kill -9
+
+    ps aux | grep redis-server | awk '{print $2}' | xargs kill -9
+
+    ps aux | grep goagent | awk '{print $2}' | xargs kill -9
+
+    #padrino stop
+    #stop unicorn
+    ps aux | grep unicorn | awk '{print $2}' | xargs kill -9 
+
+    #clear all logs
+    rm -rf ./log/*
+    rm -f ./nohup.out
+fi

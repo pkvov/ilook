@@ -1,0 +1,74 @@
+-# coding: utf-8
+%table
+  %tr
+    %th选中
+    %th图片
+    %th名称
+    %th市场
+    %th类别
+    %th最高价
+    %th最低价
+    %th单位
+    %th日期
+    %th最近走势
+  - if @items
+    - @items.each do |item|
+      %tr
+        %td
+          %input{:type => "checkbox", :value=> item.name}
+        %td
+          %img{:src => "/images/logo/#{item[:name]}.jpg"}
+        %td 
+          = item.name
+        %td 
+          = item.market.name if item.market_id
+        %td 
+          = item.category.name if item.category_id
+        %td 
+          = item.high
+        %td 
+          = item.low
+        %td 
+          = item.unit.name if item.unit_id
+        %td 
+          = item.date.strftime("%Y-%m-%d")
+        %td
+          %img{:src => "/images/kline/#{item[:name]}.png", :height => 150, :width => 200}
+=find_and_preserve(will_paginate(@items, :render => "/vegetable/show"))
+
+%select#update_category
+  %option
+  - @categories.each do |item|
+    %option{:value => item.id}
+      = item.name
+
+    
+:javascript
+  $("#update_category").change(function() {
+    var checked = $("input:checked");
+    if (checked.count == 0) {return;}
+    var stringJson = '{"update_items": {';
+    checked.each(function(key, value) {
+      stringJson += '"'+ key + '"' + ':' + '"' + value.value + '"' + ','
+    });
+    stringJson = stringJson.substring(0, stringJson.length - 1) + '}, ';
+    stringJson += '"category_id": ' + '"' + this.value + '"';
+    stringJson += '}';
+    var json_data = JSON.parse(stringJson);
+    $.ajax({
+      type: "POST",
+      url: '/wrong/update_category',
+      dataType: 'json',
+      data: json_data,
+      success: function(data, textStatus) {
+        if (data.redirect) {
+            // data.redirect contains the string URL to redirect to
+            window.location.href = data.redirect;
+        }
+        else {
+            // data.form contains the HTML for the replacement form
+            $("#myform").replaceWith(data.form);
+        }
+      }
+    });
+  });

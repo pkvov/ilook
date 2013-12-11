@@ -1,0 +1,14 @@
+development: &my_settings
+  bin_path: /usr/local/sphinx-for-chinese/bin/
+  charset_type: utf-8
+  chinese_dictionary: /usr/local/sphinx-for-chinese/etc/xdict
+  listen: localhost:9306:mysql41
+
+test:
+  <<: *my_settings
+
+production:
+  bin_path: /usr/local/sphinx-for-chinese/bin/
+  charset_type: utf-8
+  chinese_dictionary: /usr/local/sphinx-for-chinese/etc/xdict
+  listen: localhost:9306:mysql41

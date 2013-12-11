@@ -1,0 +1,12 @@
+[{
+    "domain": "127.0.0.1",
+    "expirationDate": 1371092922.93747,
+    "hostOnly": true,
+    "httpOnly": true,
+    "name": "rack.session",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "storeId": "0",
+    "value": "BAh7B0kiD3Nlc3Npb25faWQGOgZFRiJFNWY3YThjYzQ5ZGU3MzRiMTE3NTk3%0ANDJjN2U4ZjRjZTkzZTIxZDEyMWFhZDMyMmVlMTljOTZjZGY5NjVjNTIzN0ki%0AD3dlaWJvX2NvZGUGOwBGSSIlN2IwYWFkNWUzMWYwNTE3OTI4ZTJmZGE1Yjkz%0AYTkxYmQGOwBU%0A--d10f1e012c4ae57cc9c161525cb65cc9c89d6c29"
+}]
