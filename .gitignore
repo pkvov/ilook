@@ -10,3 +10,5 @@ public/images/kline/
 public/images/trend/
 public/images/logo/
 *~
+nohup.out
+log/
